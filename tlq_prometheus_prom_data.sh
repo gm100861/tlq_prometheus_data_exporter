@@ -72,8 +72,8 @@ function gen_prometheus_data() {
 
 }
 
-# 要处理的topic, 这里只处理了 queueh queuef queuea三个, 如果有多的直接空格分隔加上即可
-for queue_name in queueh queuef queuea; do
+# 要处理的topic, 这里只处理了 queueh , 如果有多的直接空格分隔加上即可
+for queue_name in queueh ; do
   gen_prometheus_data $queue_name;
 done
 
